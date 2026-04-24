@@ -65,6 +65,14 @@ export default function HomeScreen() {
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
+        <ThemedText type="subtitle">Babylon Vibe XR</ThemedText>
+        <ThemedText>
+          Open the <ThemedText type="defaultSemiBold">XR</ThemedText> tab for a Babylon v9 scene with
+          Babylon GUI, a bundled <ThemedText type="defaultSemiBold">demo.glb</ThemedText>, and a
+          one-tap WebXR session that targets Horizon OS / Quest.
+        </ThemedText>
+      </ThemedView>
+      <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
         <ThemedText>
           {`When you're ready, run `}

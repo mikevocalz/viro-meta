@@ -1,50 +1,53 @@
-# Welcome to your Expo app 👋
+# viro-meta — Babylon Vibe XR
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Expo Router + React Native 0.81 app with a Babylon.js v9 + Babylon GUI WebXR
+demo that builds for iOS, Android, and Meta Horizon OS (Quest 2 / Pro / 3 / 3s).
 
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Quick start
 
 ```bash
-npm run reset-project
+bun install
+bun run start          # dev server
+bun run start:https    # dev server over HTTPS (requires ./.ssl/key.pem + cert.pem)
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Open the **XR** tab to see the Babylon scene. Tap **Enter XR** to request an
+`immersive-vr` session.
 
-## Learn more
+## Quest / Horizon OS build
 
-To learn more about developing your project with Expo, look at the following resources:
+`app.json` wires `expo-horizon-core` with Horizon-specific features (headtracking,
+passthrough, hand-tracking) and `com.oculus.intent.category.VR` so the build
+lands on the VR home panel. To produce an APK for sideloading:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+bun run quest   # expo run:android --variant release --device
+```
 
-## Join the community
+## Metro + HTTPS
 
-Join our community of developers creating universal apps.
+`metro.config.js` uses the latest `metro` / `metro-resolver` to:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+1. Register `.glb`, `.gltf`, `.bin`, `.env`, `.hdr`, `.ktx`, `.ktx2`, `.basis`
+   as asset extensions so `require('@/assets/models/demo.glb')` works.
+2. Short-circuit `https://` / `http://` imports to a shim so Babylon loaders can
+   fetch remote assets at runtime.
+3. Enable HTTPS on the Metro dev server when `./.ssl/key.pem` and
+   `./.ssl/cert.pem` are present (required for WebXR on LAN).
+
+Generate self-signed dev certs:
+
+```bash
+mkdir -p .ssl && openssl req -x509 -newkey rsa:4096 -nodes \
+  -keyout .ssl/key.pem -out .ssl/cert.pem -days 365 \
+  -subj "/CN=localhost"
+```
+
+## Assets
+
+- `assets/models/demo.glb` — a minimal glTF 2.0 unit cube with a PBR material.
+  Swap for any GLB / glTF; it will be loaded via Babylon's `SceneLoader`.
+
+## Reset starter
+
+`bun run reset-project` moves the starter code to `app-example/`.

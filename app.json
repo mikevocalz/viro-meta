@@ -9,9 +9,15 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.virometa.xr",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Used for passthrough AR in the Babylon XR demo.",
+        "NSMicrophoneUsageDescription": "Used for voice input in the Babylon XR demo."
+      }
     },
     "android": {
+      "package": "com.virometa.xr",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -19,7 +25,14 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "com.oculus.permission.USE_ANCHOR_API",
+        "com.oculus.permission.USE_SCENE",
+        "horizonos.permission.HORIZON_CAMERA"
+      ]
     },
     "web": {
       "output": "static",
@@ -27,6 +40,40 @@
     },
     "plugins": [
       "expo-router",
+      [
+        "expo-horizon-core",
+        {
+          "android": {
+            "device": ["horizonos"],
+            "minSdkVersion": 29,
+            "targetSdkVersion": 32,
+            "uses-feature": [
+              { "name": "android.hardware.vr.headtracking", "required": true, "version": 1 },
+              { "name": "oculus.software.handtracking", "required": false },
+              { "name": "oculus.software.trackedkeyboard", "required": false },
+              { "name": "com.oculus.feature.PASSTHROUGH", "required": false }
+            ],
+            "queries": [
+              { "package": "com.oculus.vrshell" },
+              { "package": "com.oculus.systemux" }
+            ],
+            "manifestApplicationMetaData": [
+              { "name": "com.oculus.supportedDevices", "value": "quest2|questpro|quest3|quest3s" },
+              { "name": "com.oculus.ossplash", "value": "true" },
+              { "name": "com.oculus.intent.category.VR", "value": "vr_only" }
+            ],
+            "intentFilters": [
+              {
+                "action": "android.intent.action.MAIN",
+                "category": [
+                  "android.intent.category.LAUNCHER",
+                  "com.oculus.intent.category.VR"
+                ]
+              }
+            ]
+          }
+        }
+      ],
       [
         "expo-splash-screen",
         {
