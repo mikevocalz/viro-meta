@@ -60,7 +60,11 @@
     "eslint-config-expo": "~10.0.0",
     "metro": "^0.84.3",
     "metro-resolver": "^0.84.3",
+    "patch-package": "^8.0.1",
     "typescript": "~5.9.2"
   },
-  "private": true
+  "private": true,
+  "patchedDependencies": {
+    "@babylonjs/react-native@2.0.3": "patches/@babylonjs%2Freact-native@2.0.3.patch"
+  }
 }
