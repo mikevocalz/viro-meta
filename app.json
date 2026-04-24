@@ -43,7 +43,7 @@
     },
     "plugins": [
       "expo-router",
-      "./plugins/with-missing-device-dimension.js",
+      "./plugins/with-quest-build-fixes.js",
       [
         "@reactvision/react-viro",
         {
