@@ -14,7 +14,8 @@
     "quest:debug": "expo run:android --variant questDebug --device",
     "quest:prebuild": "expo prebuild --platform android --clean",
     "lint": "expo lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "postinstall": "node ./scripts/fix-babylon-case.js"
   },
   "dependencies": {
     "@babylonjs/core": "^9.4.0",
