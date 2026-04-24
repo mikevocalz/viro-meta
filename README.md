@@ -16,12 +16,25 @@ Open the **XR** tab to see the Babylon scene. Tap **Enter XR** to request an
 
 ## Quest / Horizon OS build
 
-`app.json` wires `expo-horizon-core` with Horizon-specific features (headtracking,
-passthrough, hand-tracking) and `com.oculus.intent.category.VR` so the build
-lands on the VR home panel. To produce an APK for sideloading:
+Two XR stacks ship side-by-side:
+
+- **XR tab** — Babylon.js v9 + `@babylonjs/react-native` + WebXR (`immersive-vr`).
+  Works today on Quest, iOS Safari (ARKit WebXR), and Android Chrome.
+- **AR tab** — ReactVision Viro. Uses `ViroARSceneNavigator` on phones and
+  `ViroVRSceneNavigator` (OpenXR) when the `VRModuleOpenXR` native module is
+  present. Pinned to `github:ReactVision/viro#afd193a` because Quest support
+  (`ViroPlatform.QUEST` + `VRModuleOpenXR`) landed on `main` April 14, 2026 but
+  is not yet in a tagged v2.54 release.
+
+`expo-horizon-core` creates a dedicated `quest` product flavor via
+`expo prebuild`; the generated `android/app/src/quest/AndroidManifest.xml`
+carries `com.oculus.intent.category.VR`, supported-devices metadata, and the
+headtracking / handtracking / passthrough features. Build + sideload:
 
 ```bash
-bun run quest   # expo run:android --variant release --device
+bun run quest:prebuild    # writes android/ with the quest flavor
+bun run quest             # expo run:android --variant questRelease --device
+bun run quest:debug       # same, debug variant
 ```
 
 ## Metro + HTTPS

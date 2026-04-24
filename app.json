@@ -38,8 +38,22 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
+    "extra": {
+      "target": "universal"
+    },
     "plugins": [
       "expo-router",
+      [
+        "@reactvision/react-viro",
+        {
+          "ios": {
+            "cameraUsagePermission": "Used for AR in the Viro demo."
+          },
+          "android": {
+            "xRMode": ["AR", "OVR_MOBILE"]
+          }
+        }
+      ],
       [
         "expo-horizon-core",
         {
