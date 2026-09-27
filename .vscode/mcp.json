@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "expo-mcp": {
+      "command": "bun",
+      "args": ["run", "mcp"],
+      "env": {
+        "EXPO_UNSTABLE_MCP_SERVER": "1"
+      },
+      "description": "Expo MCP Server for AI-assisted development"
+    }
+  }
+}

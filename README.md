@@ -64,3 +64,50 @@ mkdir -p .ssl && openssl req -x509 -newkey rsa:4096 -nodes \
 ## Reset starter
 
 `bun run reset-project` moves the starter code to `app-example/`.
+
+## MCP Server (AI-assisted development)
+
+This project includes an **Expo MCP Server** for AI-assisted development. The MCP (Model Context Protocol) server provides AI assistants with tools to interact with your Expo development environment.
+
+### Setup
+
+The MCP server is already configured with the `expo-mcp` package:
+
+```bash
+bun install  # expo-mcp is included in dependencies
+```
+
+### Usage
+
+**Start the MCP server** (requires Expo dev server running on port 8081):
+
+```bash
+bun run mcp          # Local MCP server
+bun run mcp:tunnel   # With Expo tunnel support
+```
+
+**Environment variable** (set in `.env`):
+
+```env
+EXPO_UNSTABLE_MCP_SERVER=1
+```
+
+### VS Code Integration
+
+The `.vscode/mcp.json` file configures the MCP server for VS Code's AI features. The server will start automatically when you open the project.
+
+### Available Tools
+
+When the MCP server is running, AI assistants can:
+
+- Inspect the Metro bundler state
+- Access device logs
+- Query app metadata
+- Trigger reloads
+- And more...
+
+### Configuration Files
+
+- `.vscode/mcp.json` - VS Code MCP server configuration
+- `mcp.config.json` - General MCP configuration
+- `.env` - Environment variables for MCP

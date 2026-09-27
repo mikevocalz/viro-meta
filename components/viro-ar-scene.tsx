@@ -8,11 +8,9 @@ import {
   Viro3DObject,
   ViroTrackingReason,
   ViroTrackingStateConstants,
-  ViroScene,
-  ViroVRSceneNavigator,
 } from '@reactvision/react-viro';
 import { useState } from 'react';
-import { NativeModules, StyleSheet, TextStyle } from 'react-native';
+import { NativeModules, Pressable, StyleSheet, Text, View } from 'react-native';
 
 ViroMaterials.createMaterials({
   viberLabel: {
@@ -58,31 +56,9 @@ function ViroARVibeScene() {
   );
 }
 
-function ViroVRVibeScene() {
-  return (
-    <ViroScene>
-      <ViroAmbientLight color="#ffffff" intensity={300} />
-      <ViroNode position={[0, 0, -2]}>
-        <Viro3DObject
-          // eslint-disable-next-line @typescript-eslint/no-require-imports
-          source={require('@/assets/models/demo.glb')}
-          type="GLB"
-          scale={[0.5, 0.5, 0.5]}
-          rotation={[0, 30, 0]}
-        />
-        <ViroText
-          text="Viro Quest — OpenXR"
-          position={[0, 0.8, 0]}
-          scale={[0.6, 0.6, 0.6]}
-          style={textStyle}
-          materials={['viberLabel']}
-        />
-      </ViroNode>
-    </ViroScene>
-  );
-}
 
-const textStyle: TextStyle = {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const textStyle: any = {
   fontFamily: 'Arial',
   fontSize: 22,
   color: '#ffffff',
@@ -102,14 +78,53 @@ export function ViroARExperience() {
 
 export function ViroQuestExperience() {
   return (
-    <ViroVRSceneNavigator
-      vrModeEnabled
-      initialScene={{ scene: ViroVRVibeScene }}
-      style={styles.nav}
-    />
+    <View style={styles.panel}>
+      <Text style={styles.panelTitle}>Viro Quest — OpenXR</Text>
+      <Text style={styles.panelBody}>
+        Tap below to launch the immersive VR experience in a dedicated VRActivity.
+        The VR scene supports scene switching, passthrough, and hand tracking.
+      </Text>
+      <Pressable
+        style={styles.launchBtn}
+        onPress={() => NativeModules.VRLauncher?.launchVRScene()}
+      >
+        <Text style={styles.launchBtnText}>Launch VR Scene</Text>
+      </Pressable>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   nav: { flex: 1 },
+  panel: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 16,
+    paddingHorizontal: 32,
+  },
+  panelTitle: {
+    color: '#E5E7EB',
+    fontSize: 20,
+    fontWeight: '700',
+    textAlign: 'center',
+  },
+  panelBody: {
+    color: '#9CA3AF',
+    fontSize: 14,
+    textAlign: 'center',
+    lineHeight: 20,
+  },
+  launchBtn: {
+    marginTop: 8,
+    backgroundColor: '#7C3AED',
+    paddingHorizontal: 32,
+    paddingVertical: 14,
+    borderRadius: 12,
+  },
+  launchBtnText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: '600',
+  },
 });

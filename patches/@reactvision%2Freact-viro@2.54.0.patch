@@ -1,0 +1,509 @@
+diff --git a/node_modules/@reactvision/react-viro/android/arcore_client/build/.transforms/8266fe4652013ebb6f0cc083f91a4682/results.bin b/android/arcore_client/build/.transforms/8266fe4652013ebb6f0cc083f91a4682/results.bin
+new file mode 100644
+index 0000000000000000000000000000000000000000..060fe59b8b41e62c53e2e5e8f247e04d88a9eb06
+--- /dev/null
++++ b/android/arcore_client/build/.transforms/8266fe4652013ebb6f0cc083f91a4682/results.bin
+@@ -0,0 +1 @@
++o/core-1.43.0-runtime
+diff --git a/node_modules/@reactvision/react-viro/android/arcore_client/build/.transforms/8266fe4652013ebb6f0cc083f91a4682/transformed/core-1.43.0-runtime/core-1.43.0-runtime_dex/classes.dex b/android/arcore_client/build/.transforms/8266fe4652013ebb6f0cc083f91a4682/transformed/core-1.43.0-runtime/core-1.43.0-runtime_dex/classes.dex
+new file mode 100644
+index 0000000000000000000000000000000000000000..270969971beeee510eb7d3ba65b83454f9b02d94
+Binary files /dev/null and b/android/arcore_client/build/.transforms/8266fe4652013ebb6f0cc083f91a4682/transformed/core-1.43.0-runtime/core-1.43.0-runtime_dex/classes.dex differ
+diff --git a/node_modules/@reactvision/react-viro/android/arcore_client/build/.transforms/a497808e9c6d06102b7daaa0cf86a5c7/results.bin b/android/arcore_client/build/.transforms/a497808e9c6d06102b7daaa0cf86a5c7/results.bin
+new file mode 100644
+index 0000000000000000000000000000000000000000..060fe59b8b41e62c53e2e5e8f247e04d88a9eb06
+--- /dev/null
++++ b/android/arcore_client/build/.transforms/a497808e9c6d06102b7daaa0cf86a5c7/results.bin
+@@ -0,0 +1 @@
++o/core-1.43.0-runtime
+diff --git a/node_modules/@reactvision/react-viro/android/arcore_client/build/.transforms/a497808e9c6d06102b7daaa0cf86a5c7/transformed/core-1.43.0-runtime/core-1.43.0-runtime_dex/classes.dex b/android/arcore_client/build/.transforms/a497808e9c6d06102b7daaa0cf86a5c7/transformed/core-1.43.0-runtime/core-1.43.0-runtime_dex/classes.dex
+new file mode 100644
+index 0000000000000000000000000000000000000000..270969971beeee510eb7d3ba65b83454f9b02d94
+Binary files /dev/null and b/android/arcore_client/build/.transforms/a497808e9c6d06102b7daaa0cf86a5c7/transformed/core-1.43.0-runtime/core-1.43.0-runtime_dex/classes.dex differ
+diff --git a/node_modules/@reactvision/react-viro/android/gvr_common/build/.transforms/8f11b5483253f2700f41fd088f07ea7a/results.bin b/android/gvr_common/build/.transforms/8f11b5483253f2700f41fd088f07ea7a/results.bin
+new file mode 100644
+index 0000000000000000000000000000000000000000..bd07752285c03eeae11e2983587dad17622021a9
+--- /dev/null
++++ b/android/gvr_common/build/.transforms/8f11b5483253f2700f41fd088f07ea7a/results.bin
+@@ -0,0 +1 @@
++o/sdk-common-1.180.0-runtime
+diff --git a/node_modules/@reactvision/react-viro/android/gvr_common/build/.transforms/8f11b5483253f2700f41fd088f07ea7a/transformed/sdk-common-1.180.0-runtime/sdk-common-1.180.0-runtime_dex/classes.dex b/android/gvr_common/build/.transforms/8f11b5483253f2700f41fd088f07ea7a/transformed/sdk-common-1.180.0-runtime/sdk-common-1.180.0-runtime_dex/classes.dex
+new file mode 100644
+index 0000000000000000000000000000000000000000..4bc7d728380e394f7f5d7710130d9822a32eb1f8
+Binary files /dev/null and b/android/gvr_common/build/.transforms/8f11b5483253f2700f41fd088f07ea7a/transformed/sdk-common-1.180.0-runtime/sdk-common-1.180.0-runtime_dex/classes.dex differ
+diff --git a/node_modules/@reactvision/react-viro/android/gvr_common/build/.transforms/f1032580610d6cb31b1de7900c21af6b/results.bin b/android/gvr_common/build/.transforms/f1032580610d6cb31b1de7900c21af6b/results.bin
+new file mode 100644
+index 0000000000000000000000000000000000000000..bd07752285c03eeae11e2983587dad17622021a9
+--- /dev/null
++++ b/android/gvr_common/build/.transforms/f1032580610d6cb31b1de7900c21af6b/results.bin
+@@ -0,0 +1 @@
++o/sdk-common-1.180.0-runtime
+diff --git a/node_modules/@reactvision/react-viro/android/gvr_common/build/.transforms/f1032580610d6cb31b1de7900c21af6b/transformed/sdk-common-1.180.0-runtime/sdk-common-1.180.0-runtime_dex/classes.dex b/android/gvr_common/build/.transforms/f1032580610d6cb31b1de7900c21af6b/transformed/sdk-common-1.180.0-runtime/sdk-common-1.180.0-runtime_dex/classes.dex
+new file mode 100644
+index 0000000000000000000000000000000000000000..4bc7d728380e394f7f5d7710130d9822a32eb1f8
+Binary files /dev/null and b/android/gvr_common/build/.transforms/f1032580610d6cb31b1de7900c21af6b/transformed/sdk-common-1.180.0-runtime/sdk-common-1.180.0-runtime_dex/classes.dex differ
+diff --git a/node_modules/@reactvision/react-viro/android/react_viro/build/.transforms/37b92d25c3e1bc2b9de4c0a6398cdd6a/results.bin b/android/react_viro/build/.transforms/37b92d25c3e1bc2b9de4c0a6398cdd6a/results.bin
+new file mode 100644
+index 0000000000000000000000000000000000000000..af4177833eb24a44194010890b4832cfc8c9ec64
+--- /dev/null
++++ b/android/react_viro/build/.transforms/37b92d25c3e1bc2b9de4c0a6398cdd6a/results.bin
+@@ -0,0 +1 @@
++o/react_viro-release-runtime
+diff --git a/node_modules/@reactvision/react-viro/android/react_viro/build/.transforms/37b92d25c3e1bc2b9de4c0a6398cdd6a/transformed/react_viro-release-runtime/react_viro-release-runtime_dex/classes.dex b/android/react_viro/build/.transforms/37b92d25c3e1bc2b9de4c0a6398cdd6a/transformed/react_viro-release-runtime/react_viro-release-runtime_dex/classes.dex
+new file mode 100644
+index 0000000000000000000000000000000000000000..770d32e26ec7bad94b9607c554bc795f41447258
+Binary files /dev/null and b/android/react_viro/build/.transforms/37b92d25c3e1bc2b9de4c0a6398cdd6a/transformed/react_viro-release-runtime/react_viro-release-runtime_dex/classes.dex differ
+diff --git a/node_modules/@reactvision/react-viro/android/react_viro/build/.transforms/9166c42c43e41de8dda7b02285f9053f/results.bin b/android/react_viro/build/.transforms/9166c42c43e41de8dda7b02285f9053f/results.bin
+new file mode 100644
+index 0000000000000000000000000000000000000000..af4177833eb24a44194010890b4832cfc8c9ec64
+--- /dev/null
++++ b/android/react_viro/build/.transforms/9166c42c43e41de8dda7b02285f9053f/results.bin
+@@ -0,0 +1 @@
++o/react_viro-release-runtime
+diff --git a/node_modules/@reactvision/react-viro/android/react_viro/build/.transforms/9166c42c43e41de8dda7b02285f9053f/transformed/react_viro-release-runtime/react_viro-release-runtime_dex/classes.dex b/android/react_viro/build/.transforms/9166c42c43e41de8dda7b02285f9053f/transformed/react_viro-release-runtime/react_viro-release-runtime_dex/classes.dex
+new file mode 100644
+index 0000000000000000000000000000000000000000..770d32e26ec7bad94b9607c554bc795f41447258
+Binary files /dev/null and b/android/react_viro/build/.transforms/9166c42c43e41de8dda7b02285f9053f/transformed/react_viro-release-runtime/react_viro-release-runtime_dex/classes.dex differ
+diff --git a/android/react_viro/react_viro-release.aar b/android/react_viro/react_viro-release.aar
+index ab859459983a17c144a5083a96fe0257941464b3..389df9fa7a7ee6478c3c249563f29a63d69537c3 100644
+Binary files a/android/react_viro/react_viro-release.aar and b/android/react_viro/react_viro-release.aar differ
+diff --git a/node_modules/@reactvision/react-viro/android/viro_renderer/build/.transforms/28dacd91c840b3397fd2b464e0b63b37/results.bin b/android/viro_renderer/build/.transforms/28dacd91c840b3397fd2b464e0b63b37/results.bin
+new file mode 100644
+index 0000000000000000000000000000000000000000..9966991946d49c07e7a4678fb32bccc2420c84ef
+--- /dev/null
++++ b/android/viro_renderer/build/.transforms/28dacd91c840b3397fd2b464e0b63b37/results.bin
+@@ -0,0 +1 @@
++o/viro_renderer-release-runtime
+diff --git a/node_modules/@reactvision/react-viro/android/viro_renderer/build/.transforms/28dacd91c840b3397fd2b464e0b63b37/transformed/viro_renderer-release-runtime/viro_renderer-release-runtime_dex/classes.dex b/android/viro_renderer/build/.transforms/28dacd91c840b3397fd2b464e0b63b37/transformed/viro_renderer-release-runtime/viro_renderer-release-runtime_dex/classes.dex
+new file mode 100644
+index 0000000000000000000000000000000000000000..ec868fd6da0d0c670cfee4f7d7952977a27dbb22
+Binary files /dev/null and b/android/viro_renderer/build/.transforms/28dacd91c840b3397fd2b464e0b63b37/transformed/viro_renderer-release-runtime/viro_renderer-release-runtime_dex/classes.dex differ
+diff --git a/node_modules/@reactvision/react-viro/android/viro_renderer/build/.transforms/3b4e5c98447f1db089e06dc07858e212/results.bin b/android/viro_renderer/build/.transforms/3b4e5c98447f1db089e06dc07858e212/results.bin
+new file mode 100644
+index 0000000000000000000000000000000000000000..9966991946d49c07e7a4678fb32bccc2420c84ef
+--- /dev/null
++++ b/android/viro_renderer/build/.transforms/3b4e5c98447f1db089e06dc07858e212/results.bin
+@@ -0,0 +1 @@
++o/viro_renderer-release-runtime
+diff --git a/node_modules/@reactvision/react-viro/android/viro_renderer/build/.transforms/3b4e5c98447f1db089e06dc07858e212/transformed/viro_renderer-release-runtime/viro_renderer-release-runtime_dex/classes.dex b/android/viro_renderer/build/.transforms/3b4e5c98447f1db089e06dc07858e212/transformed/viro_renderer-release-runtime/viro_renderer-release-runtime_dex/classes.dex
+new file mode 100644
+index 0000000000000000000000000000000000000000..ec868fd6da0d0c670cfee4f7d7952977a27dbb22
+Binary files /dev/null and b/android/viro_renderer/build/.transforms/3b4e5c98447f1db089e06dc07858e212/transformed/viro_renderer-release-runtime/viro_renderer-release-runtime_dex/classes.dex differ
+diff --git a/android/viro_renderer/viro_renderer-release.aar b/android/viro_renderer/viro_renderer-release.aar
+index 6fd0f6413d1dd5250122e297f5d6bed38e810365..b6245ab2bb2b06a78b38376909a19b6019093479 100644
+Binary files a/android/viro_renderer/viro_renderer-release.aar and b/android/viro_renderer/viro_renderer-release.aar differ
+diff --git a/components/Types/ViroEvents.ts b/components/Types/ViroEvents.ts
+index 30b541674f9d8892dd24faf5b97b3e229d922e07..397b26befc5ff0e6bf58c9506906eeb025a1b57d 100644
+--- a/components/Types/ViroEvents.ts
++++ b/components/Types/ViroEvents.ts
+@@ -134,6 +134,7 @@ export type ViroPlatformInfo = {
+ export enum ViroPlatformTypes {
+   GVR = "gvr",
+   GEAR_VR = "ovr-mobile",
++  QUEST = "quest",
+ }
+ 
+ export enum ViroHeadsetTypes {
+@@ -176,6 +177,58 @@ export type ViroErrorEvent = {
+   error: Error;
+ };
+ 
++/** ===========================================================================
++ * Quest / OpenXR Hand Tracking Types
++ * ============================================================================ */
++
++export type ViroJoint = {
++  position: Viro3DPoint;
++  /** Sphere radius representing finger pad size (meters). */
++  radius: number;
++};
++
++export type ViroHandJoints = {
++  wrist: ViroJoint;
++  thumbMetacarpal: ViroJoint;
++  thumbProximal: ViroJoint;
++  thumbDistal: ViroJoint;
++  thumbTip: ViroJoint;
++  indexMetacarpal: ViroJoint;
++  indexProximal: ViroJoint;
++  indexIntermediate: ViroJoint;
++  indexDistal: ViroJoint;
++  indexTip: ViroJoint;
++  middleMetacarpal: ViroJoint;
++  middleProximal: ViroJoint;
++  middleIntermediate: ViroJoint;
++  middleDistal: ViroJoint;
++  middleTip: ViroJoint;
++  ringMetacarpal: ViroJoint;
++  ringProximal: ViroJoint;
++  ringIntermediate: ViroJoint;
++  ringDistal: ViroJoint;
++  ringTip: ViroJoint;
++  littleMetacarpal: ViroJoint;
++  littleProximal: ViroJoint;
++  littleIntermediate: ViroJoint;
++  littleDistal: ViroJoint;
++  littleTip: ViroJoint;
++};
++
++export type ViroHandPinchEvent = {
++  hand: "left" | "right";
++  /** World-space position of the pinch point (midpoint between thumb tip and index tip). */
++  position: Viro3DPoint;
++  /** Pinch strength [0..1] from XR_FB_hand_tracking_aim, or 1.0 on pinch-complete fallback. */
++  pinchStrength: number;
++};
++
++/** Per-frame skeletal hand data dispatched via onHandUpdate. null when hand is not tracked. */
++export type ViroHandUpdateEvent = {
++  left: ViroHandJoints | null;
++  right: ViroHandJoints | null;
++};
++
+ /** ===========================================================================
+  * Viro Animation Events
+  * ============================================================================ */
+diff --git a/components/ViroVRSceneNavigator.tsx b/components/ViroVRSceneNavigator.tsx
+index 5dc10f0a7cd9b607f83a8ba73ee749fa22ab9cbf..4f13d20d772ec584b6ea84d8d185def4b05f3bef 100644
+--- a/components/ViroVRSceneNavigator.tsx
++++ b/components/ViroVRSceneNavigator.tsx
+@@ -19,7 +19,10 @@ import {
+   StyleSheet,
+   ViewProps,
+ } from "react-native";
+-import { ViroExitViroEvent } from "./Types/ViroEvents";
++import {
++  ViroExitViroEvent,
++  ViroHandUpdateEvent,
++} from "./Types/ViroEvents";
+ import {
+   Viro3DPoint,
+   ViroNativeRef,
+@@ -27,6 +30,10 @@ import {
+   ViroSceneDictionary,
+ } from "./Types/ViroUtils";
+ const ViroSceneNavigatorModule = NativeModules.VRTSceneNavigatorModule;
++const VRModuleOpenXR = NativeModules.VRModuleOpenXR as {
++  recenterTracking: (viewTag: number) => void;
++  setPassthroughEnabled: (viewTag: number, enabled: boolean) => void;
++} | undefined;
+ 
+ type State = {
+   sceneDictionary: ViroSceneDictionary;
+@@ -78,6 +85,20 @@ type Props = ViewProps & {
+   bloomEnabled?: boolean;
+   shadowsEnabled?: boolean;
+   multisamplingEnabled?: boolean;
++
++  /** Enable XR_FB_passthrough mixed-reality camera feed (Quest 3 / Quest Pro). */
++  passthroughEnabled?: boolean;
++
++  /**
++   * Enable skeletal hand tracking (Quest — requires com.oculus.permission.HAND_TRACKING in manifest).
++   */
++  handTrackingEnabled?: boolean;
++
++  /**
++   * Per-frame skeletal hand joint data. Fires at display refresh rate (72/90 Hz).
++   * null for a hand means it is not currently tracked.
++   */
++  onHandUpdate?: (event: NativeSyntheticEvent<ViroHandUpdateEvent>) => void;
+ };
+ 
+ /**
+diff --git a/dist/components/Types/ViroEvents.d.ts b/dist/components/Types/ViroEvents.d.ts
+index f51e27f633b73ed65d94b43910b1f78e160b7e87..eef0ee4efa68b808cf9e4057931ddbe4a907dd19 100644
+--- a/dist/components/Types/ViroEvents.d.ts
++++ b/dist/components/Types/ViroEvents.d.ts
+@@ -100,7 +100,8 @@ export type ViroPlatformInfo = {
+ };
+ export declare enum ViroPlatformTypes {
+     GVR = "gvr",
+-    GEAR_VR = "ovr-mobile"
++    GEAR_VR = "ovr-mobile",
++    QUEST = "quest"
+ }
+ export declare enum ViroHeadsetTypes {
+     CARDBOARD = "cardboard",
+@@ -135,6 +136,49 @@ export type ViroExitViroEvent = {};
+ export type ViroErrorEvent = {
+     error: Error;
+ };
++/** ===========================================================================
++ * Quest / OpenXR Hand Tracking Types
++ * ============================================================================ */
++export type ViroJoint = {
++    position: Viro3DPoint;
++    radius: number;
++};
++export type ViroHandJoints = {
++    wrist: ViroJoint;
++    thumbMetacarpal: ViroJoint;
++    thumbProximal: ViroJoint;
++    thumbDistal: ViroJoint;
++    thumbTip: ViroJoint;
++    indexMetacarpal: ViroJoint;
++    indexProximal: ViroJoint;
++    indexIntermediate: ViroJoint;
++    indexDistal: ViroJoint;
++    indexTip: ViroJoint;
++    middleMetacarpal: ViroJoint;
++    middleProximal: ViroJoint;
++    middleIntermediate: ViroJoint;
++    middleDistal: ViroJoint;
++    middleTip: ViroJoint;
++    ringMetacarpal: ViroJoint;
++    ringProximal: ViroJoint;
++    ringIntermediate: ViroJoint;
++    ringDistal: ViroJoint;
++    ringTip: ViroJoint;
++    littleMetacarpal: ViroJoint;
++    littleProximal: ViroJoint;
++    littleIntermediate: ViroJoint;
++    littleDistal: ViroJoint;
++    littleTip: ViroJoint;
++};
++export type ViroHandPinchEvent = {
++    hand: "left" | "right";
++    position: Viro3DPoint;
++    pinchStrength: number;
++};
++export type ViroHandUpdateEvent = {
++    left: ViroHandJoints | null;
++    right: ViroHandJoints | null;
++};
+ /** ===========================================================================
+  * Viro Animation Events
+  * ============================================================================ */
+diff --git a/dist/components/Types/ViroEvents.js b/dist/components/Types/ViroEvents.js
+index 7b56e51fa1172458eeb5e72d193b9265f31b2e44..2a6ffb33c6ee57a0e9c9e06c7e8ed398e848336c 100644
+--- a/dist/components/Types/ViroEvents.js
++++ b/dist/components/Types/ViroEvents.js
+@@ -35,6 +35,7 @@ var ViroPlatformTypes;
+ (function (ViroPlatformTypes) {
+     ViroPlatformTypes["GVR"] = "gvr";
+     ViroPlatformTypes["GEAR_VR"] = "ovr-mobile";
++    ViroPlatformTypes["QUEST"] = "quest";
+ })(ViroPlatformTypes || (exports.ViroPlatformTypes = ViroPlatformTypes = {}));
+ var ViroHeadsetTypes;
+ (function (ViroHeadsetTypes) {
+diff --git a/dist/components/ViroVRSceneNavigator.d.ts b/dist/components/ViroVRSceneNavigator.d.ts
+index 0afce57667d9bae90d95598e628b6e973a02d041..7493ca92c127f115198f9002c39bdd1a443c8c71 100644
+--- a/dist/components/ViroVRSceneNavigator.d.ts
++++ b/dist/components/ViroVRSceneNavigator.d.ts
+@@ -11,7 +11,7 @@
+  */
+ import * as React from "react";
+ import { NativeSyntheticEvent, ViewProps } from "react-native";
+-import { ViroExitViroEvent } from "./Types/ViroEvents";
++import { ViroExitViroEvent, ViroHandUpdateEvent } from "./Types/ViroEvents";
+ import { Viro3DPoint, ViroNativeRef, ViroScene, ViroSceneDictionary } from "./Types/ViroUtils";
+ type State = {
+     sceneDictionary: ViroSceneDictionary;
+@@ -54,6 +54,9 @@ type Props = ViewProps & {
+     bloomEnabled?: boolean;
+     shadowsEnabled?: boolean;
+     multisamplingEnabled?: boolean;
++    passthroughEnabled?: boolean;
++    handTrackingEnabled?: boolean;
++    onHandUpdate?: (event: NativeSyntheticEvent<ViroHandUpdateEvent>) => void;
+ };
+ /**
+  * ViroVRSceneNavigator is used to transition between multiple scenes.
+diff --git a/dist/plugins/withViro.d.ts b/dist/plugins/withViro.d.ts
+index 0ab6f6c3a421bf791540462806538be1b93e3117..91ffa69ba791a593ed0d1cecb5a35909ec1eda8c 100644
+--- a/dist/plugins/withViro.d.ts
++++ b/dist/plugins/withViro.d.ts
+@@ -1,5 +1,5 @@
+ import { ConfigPlugin } from "@expo/config-plugins";
+-export type XrMode = "GVR" | "AR" | "OVR_MOBILE";
++export type XrMode = "GVR" | "AR" | "OVR_MOBILE" | "QUEST";
+ /**
+  * Anchor provider type.
+  * - "none": Disabled
+diff --git a/dist/plugins/withViroAndroid.js b/dist/plugins/withViroAndroid.js
+index 86c96f9af35af7487d9787de0424be30ce53022f..c72113c7de20aac6993e43d173cf4cbf8388b780 100644
+--- a/dist/plugins/withViroAndroid.js
++++ b/dist/plugins/withViroAndroid.js
+@@ -46,9 +46,9 @@ const withBranchAndroid = (config) => {
+                 const viroPlugin = config?.plugins?.find((plugin) => Array.isArray(plugin) && plugin[0] === "@reactvision/react-viro");
+                 if (Array.isArray(viroPlugin)) {
+                     if (Array.isArray(viroPlugin[1].android?.xRMode)) {
+-                        viroPluginConfig = (viroPlugin[1].android?.xRMode).filter((mode) => ["AR", "GVR", "OVR_MOBILE"].includes(mode));
++                        viroPluginConfig = (viroPlugin[1].android?.xRMode).filter((mode) => ["AR", "GVR", "OVR_MOBILE", "QUEST"].includes(mode));
+                     }
+-                    else if (["AR", "GVR", "OVR_MOBILE"].includes(viroPlugin[1]?.android?.xRMode)) {
++                    else if (["AR", "GVR", "OVR_MOBILE", "QUEST"].includes(viroPlugin[1]?.android?.xRMode)) {
+                         viroPluginConfig = [viroPlugin[1]?.android.xRMode];
+                     }
+                 }
+@@ -281,14 +281,164 @@ const withViroManifest = (config) => (0, config_plugins_1.withAndroidManifest)(c
+             "tools:replace": "required",
+         },
+     });
++    // Quest-specific features and permissions — after uses-feature is initialized
++    if (viroPluginConfig.includes("QUEST")) {
++        contents.manifest["uses-feature"].push({
++            $: {
++                "android:name": "android.hardware.vr.headtracking",
++                "android:required": "true",
++                "android:version": "1",
++            },
++        });
++        contents.manifest["uses-feature"].push({
++            $: {
++                "android:name": "oculus.software.handtracking",
++                "android:required": "false",
++            },
++        });
++        contents.manifest["uses-feature"].push({
++            $: {
++                "android:name": "com.oculus.feature.PASSTHROUGH",
++                "android:required": "false",
++            },
++        });
++        const existingPermissions = (contents.manifest["uses-permission"] || [])
++            .map((p) => p.$?.["android:name"]);
++        if (!existingPermissions.includes("com.oculus.permission.HAND_TRACKING")) {
++            contents.manifest["uses-permission"].push({
++                $: { "android:name": "com.oculus.permission.HAND_TRACKING" },
++            });
++        }
++        if (!existingPermissions.includes("com.oculus.permission.EYE_TRACKING")) {
++            contents.manifest["uses-permission"].push({
++                $: { "android:name": "com.oculus.permission.EYE_TRACKING" },
++            });
++        }
++    }
+     return newConfig;
+ });
++// ── Quest VRActivity generation ────────────────────────────────────────────────
++const withViroQuestActivity = (config) => {
++    const viroPluginEntry = config?.plugins?.find((plugin) => Array.isArray(plugin) && plugin[0] === "@reactvision/react-viro");
++    let xrModes = ["AR", "GVR"];
++    if (Array.isArray(viroPluginEntry)) {
++        const xrMode = viroPluginEntry[1]?.android?.xRMode;
++        if (Array.isArray(xrMode)) {
++            xrModes = xrMode.filter((m) => ["AR", "GVR", "OVR_MOBILE", "QUEST"].includes(m));
++        }
++        else if (typeof xrMode === "string" &&
++            ["AR", "GVR", "OVR_MOBILE", "QUEST"].includes(xrMode)) {
++            xrModes = [xrMode];
++        }
++    }
++    if (!xrModes.includes("QUEST"))
++        return config;
++    // 1. Generate VRActivity.kt
++    config = (0, config_plugins_1.withDangerousMod)(config, [
++        "android",
++        async (config) => {
++            const packageName = config?.android?.package ?? "";
++            const packagePath = packageName.split(".");
++            const activityDir = path_1.default.join(config.modRequest.platformProjectRoot, "app", "src", "main", "java", ...packagePath);
++            if (!fs_1.default.existsSync(activityDir)) {
++                fs_1.default.mkdirSync(activityDir, { recursive: true });
++            }
++            const activityPath = path_1.default.join(activityDir, "VRActivity.kt");
++            if (!fs_1.default.existsSync(activityPath)) {
++                const kotlinContent = `package ${packageName}
++
++import android.app.Activity
++import android.app.Application
++import android.os.Bundle
++import com.facebook.react.ReactActivity
++import com.facebook.react.ReactActivityDelegate
++import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.fabricEnabled
++import com.facebook.react.defaults.DefaultReactActivityDelegate
++
++/**
++ * VRActivity — generated by @reactvision/react-viro Expo plugin.
++ * Carries com.oculus.intent.category.VR so Horizon OS grants exclusive
++ * OpenXR display access. Mounts the "VRQuestScene" React root component.
++ * Launch via NativeModules.VRLauncher.launchVRScene().
++ */
++class VRActivity : ReactActivity() {
++
++    private var lifecycleCallbacks: Application.ActivityLifecycleCallbacks? = null
++
++    override fun getMainComponentName(): String = "VRQuestScene"
++
++    override fun createReactActivityDelegate(): ReactActivityDelegate =
++        DefaultReactActivityDelegate(this, mainComponentName, fabricEnabled)
++
++    override fun onCreate(savedInstanceState: Bundle?) {
++        super.onCreate(savedInstanceState)
++        val callbacks = object : Application.ActivityLifecycleCallbacks {
++            override fun onActivityResumed(other: Activity) {
++                if (other !== this@VRActivity && !isFinishing && !isDestroyed) {
++                    finish()
++                }
++            }
++            override fun onActivityCreated(a: Activity, b: Bundle?) {}
++            override fun onActivityStarted(a: Activity) {}
++            override fun onActivityPaused(a: Activity) {}
++            override fun onActivityStopped(a: Activity) {}
++            override fun onActivitySaveInstanceState(a: Activity, b: Bundle) {}
++            override fun onActivityDestroyed(a: Activity) {}
++        }
++        application.registerActivityLifecycleCallbacks(callbacks)
++        lifecycleCallbacks = callbacks
++    }
++
++    override fun onDestroy() {
++        lifecycleCallbacks?.let { application.unregisterActivityLifecycleCallbacks(it) }
++        lifecycleCallbacks = null
++        super.onDestroy()
++    }
++}
++`;
++                fs_1.default.writeFileSync(activityPath, kotlinContent, "utf-8");
++            }
++            return config;
++        },
++    ]);
++    // 2. Add VRActivity to AndroidManifest
++    config = (0, config_plugins_1.withAndroidManifest)(config, async (config) => {
++        const app = config.modResults.manifest.application?.[0];
++        if (!app)
++            return config;
++        if (!app.activity)
++            app.activity = [];
++        const alreadyAdded = app.activity.some((a) => a.$?.["android:name"] === ".VRActivity");
++        if (!alreadyAdded) {
++            app.activity.push({
++                $: {
++                    "android:name": ".VRActivity",
++                    "android:screenOrientation": "landscape",
++                    "android:exported": "false",
++                    "android:configChanges": "keyboard|keyboardHidden|orientation|screenSize|uiMode",
++                    "android:launchMode": "singleTask",
++                },
++                "intent-filter": [
++                    {
++                        action: [{ $: { "android:name": "android.intent.action.MAIN" } }],
++                        category: [
++                            { $: { "android:name": "com.oculus.intent.category.VR" } },
++                        ],
++                    },
++                ],
++            });
++        }
++        return config;
++    });
++    return config;
++};
+ const withViroAndroid = (config, props) => {
+-    (0, config_plugins_1.withPlugins)(config, [[withBranchAndroid, props]]);
+-    withViroProjectBuildGradle(config);
+-    withViroManifest(config);
+-    withViroSettingsGradle(config);
+-    withViroAppBuildGradle(config);
++    config = withBranchAndroid(config, props);
++    config = withViroProjectBuildGradle(config);
++    config = withViroManifest(config);
++    config = withViroSettingsGradle(config);
++    config = withViroAppBuildGradle(config);
++    config = withViroQuestActivity(config, props);
+     return config;
+ };
+ exports.withViroAndroid = withViroAndroid;

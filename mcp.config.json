@@ -1,0 +1,17 @@
+{
+  "name": "viro-meta-mcp",
+  "version": "1.0.0",
+  "servers": [
+    {
+      "name": "expo-dev",
+      "description": "Expo Development Server MCP",
+      "transport": "stdio",
+      "command": "bun",
+      "args": ["run", "mcp"],
+      "env": {
+        "EXPO_UNSTABLE_MCP_SERVER": "1",
+        "NODE_ENV": "development"
+      }
+    }
+  ]
+}

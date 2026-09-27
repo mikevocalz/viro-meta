@@ -12,6 +12,10 @@
 //      - tools:replace="android:value" on com.google.ar.core /
 //        com.google.ar.core.min_apk_version to override Viro's :arcore_client
 //        defaults that conflict with the Maven com.google.ar:core coordinates.
+//      - Quest optional uses-features (handtracking, trackedkeyboard, passthrough)
+//        that expo-horizon-core does not inject
+//      - Package visibility queries for Horizon system apps (vrshell, systemux)
+//      - com.oculus.ossplash metadata
 const { withAppBuildGradle, withAndroidManifest } = require('@expo/config-plugins');
 
 const MISSING_DIM_MARKER = 'missingDimensionStrategy "device"';
@@ -49,11 +53,31 @@ const withQuestBuildFixes = (config) => {
   });
 
   config = withAndroidManifest(config, (cfg) => {
-    const application = cfg.modResults.manifest.application?.[0];
+    const { manifest } = cfg.modResults;
+    const application = manifest.application?.[0];
     if (!application) return cfg;
+
+    // ARCore — override Viro's :arcore_client defaults
     application['meta-data'] = application['meta-data'] ?? [];
     upsertMeta(application['meta-data'], 'com.google.ar.core', 'optional');
     upsertMeta(application['meta-data'], 'com.google.ar.core.min_apk_version', '240350000');
+
+    // Quest — ossplash (expo-horizon-core does not add this)
+    upsertMeta(application['meta-data'], 'com.oculus.ossplash', 'true');
+
+    // Quest — optional features (android.hardware.vr.headtracking is added by expo-horizon-core)
+    manifest['uses-feature'] = manifest['uses-feature'] ?? [];
+    upsertUsesFeature(manifest['uses-feature'], 'oculus.software.handtracking', false);
+    upsertUsesFeature(manifest['uses-feature'], 'oculus.software.trackedkeyboard', false);
+    upsertUsesFeature(manifest['uses-feature'], 'com.oculus.feature.PASSTHROUGH', false);
+
+    // Quest — package visibility queries for Horizon system apps
+    if (!manifest.queries) manifest.queries = [];
+    if (!manifest.queries.length) manifest.queries.push({});
+    manifest.queries[0].package = manifest.queries[0].package ?? [];
+    upsertQueryPackage(manifest.queries[0].package, 'com.oculus.vrshell');
+    upsertQueryPackage(manifest.queries[0].package, 'com.oculus.systemux');
+
     return cfg;
   });
 
@@ -70,6 +94,21 @@ function upsertMeta(metaArray, name, value) {
     metaArray.push({
       $: { 'android:name': name, 'android:value': value, ...replaceAttr },
     });
+  }
+}
+
+function upsertUsesFeature(featArray, name, required) {
+  const existing = featArray.find((f) => f.$['android:name'] === name);
+  if (existing) {
+    existing.$['android:required'] = String(required);
+  } else {
+    featArray.push({ $: { 'android:name': name, 'android:required': String(required) } });
+  }
+}
+
+function upsertQueryPackage(pkgArray, name) {
+  if (!pkgArray.find((p) => p.$['android:name'] === name)) {
+    pkgArray.push({ $: { 'android:name': name } });
   }
 }
 
